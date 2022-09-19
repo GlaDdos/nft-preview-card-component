@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(217deg, 54%, 11%);
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  width: 335px;
+}
+body main .card {
+  background-color: hsl(216deg, 50%, 16%);
+  border-radius: 5%;
+  padding: 25px;
+}
+body main .card h2 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+body main .card a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+}
+body main .card a:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+body main .card p {
+  font-weight: 300;
+  font-size: 16px;
+  color: hsl(215deg, 51%, 70%);
+  line-height: 1.5rem;
+  margin-top: 10px;
+}
+body main .card img {
+  width: 100%;
+}
+body main .card .img-wrapper {
+  position: relative;
+  border-radius: 5%;
+  overflow: hidden;
+}
+body main .card .img-wrapper:hover {
+  cursor: pointer;
+}
+body main .card .img-wrapper:hover::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: hsl(178deg, 100%, 50%);
+  opacity: 0.5;
+}
+body main .card .img-wrapper:hover::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  background-image: url("../images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+body main .card .row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: hsl(215deg, 51%, 70%);
+  padding-bottom: 15px;
+  border-bottom: 1px solid hsl(215deg, 51%, 22%);
+}
+body main .card .row .item {
+  display: flex;
+  align-items: center;
+}
+body main .card .row .item img {
+  height: 20px;
+  width: auto;
+  padding-right: 10px;
+}
+body main .card .row .bold-cyan {
+  font-weight: bold;
+  color: hsl(178deg, 100%, 50%);
+}
+body main .footer {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  font-size: 16px;
+  color: hsl(215deg, 51%, 70%);
+}
+body main .footer img {
+  width: 32px;
+  border-radius: 50%;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  margin-right: 15px;
+}/*# sourceMappingURL=style.css.map */
